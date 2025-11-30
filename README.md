@@ -154,3 +154,4 @@ demo/
 - Each node contains Visual-Audio-Speech event captions. These captions are organized into a Tree structure consisting of multiple levels.
 - These multi-level captions are leveraged to generate structured metadata, including key information such as Tags, Objects, and Actors.
 - The generated metadata enables efficient and precise query search and advanced information retrieval.
+![sample figure](asset/sample.png)
