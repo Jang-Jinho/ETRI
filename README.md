@@ -110,7 +110,6 @@ bash scripts/run.sh
 
 ### **Demo 1**
 Input: Video file (.mp4)
-- Ex. `bash scripts/run_demo.sh Abc123 'Event'`
 ```shell
 bash scripts/run_demo.sh <VIDEO_ID> <QUERY>
 ```
@@ -132,7 +131,6 @@ demo/
 
 ### **Demo 2**
 Input: Video link (URL)
-- Ex. `bash scripts/run_demo_url.sh https://www.youtube.com/watch?v=Abc123 'Event'`
 ```shell
 bash scripts/run_demo_url.sh <VIDEO_LINK> <QUERY>
 ```
