@@ -77,20 +77,6 @@ data/
     └── speech_asr/{video_id}.json
 ```
     
-`scripts/postprocess.sh` 에서 사용하는 예시 데이터/출력 경로는 다음과 같습니다.
-
-```text
-outputs/
-├── log.json  # Tree/LongVALE 파이프라인 결과 (SAVE_PATH)
-├── postprocess/
-│   └── {video_id}.json  
-└── query/               
-    └── example.json
-    
-logs/
-└── debug.txt                  # 잘못된 샘플 로그 (DEBUG_LOG)
-```
-    
 ## Checkpoint Setup
 
 | Modality      | Encoder | Checkpoint path                           | Download checkpoint                                                                 |
@@ -114,29 +100,6 @@ checkpoints/
 └── longvalellm-vicuna-v1-5-7b # folder
     ├── longvale-vicuna-v1-5-7b-stage2-bp
     └── longvale-vicuna-v1-5-7b-stage3-it
-```
-
-## How to Download Checkpoints
-### **Files**
-**Just push Download checkpoint**
-- `ViT-L-14.pt`  
-- `BEATs_iter3_plus_AS20K.pt`  
-- `vtimellm_stage1_mm_projector.bin`  
-
-
-### **Folder**
-**1. Just push Download checkpoint** 
-<br>**2. unzip folder** 
-- `longvalellm-vicuna-v1-5-7b.tar.gz`
-```shell
-tar -xvf ./longvalellm-vicuna-v1-5-7b.tar.gz
-```
-### Folder (whisper-large-v2 / vicuna-7b-v1.5)
-```shell
-sudo apt install git-lfs
-git lfs install
-git clone https://huggingface.co/openai/whisper-large-v2 # whisper-large-v2
-git clone https://huggingface.co/lmsys/vicuna-7b-v1.5
 ```
 
 ## How to Run
@@ -186,3 +149,6 @@ demo/
 └── └── query/ 
         └── demo.json # Query result
 ```
+
+## Example Result
+![sample](asset/sample.png)
